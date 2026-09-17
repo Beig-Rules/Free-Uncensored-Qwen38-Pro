@@ -1,2 +1,71 @@
 # Free-Uncensored-Qwen38-Pro
-Advanced free Colab notebook for running high-quality uncensored Qwen3.8-27B models on free T4 GPU with improved stability, multi-model support, better keep-alive, and Persian/English docs. Inspired by MorTsaedi's original work.
+
+**نسخه پیشرفته و رایگان اجرای مدل‌های Uncensored Qwen3.8-27B روی Google Colab (T4 GPU)**
+
+این پروژه یک نوت‌بوک پیشرفته Colab است که به شما امکان می‌دهد مدل‌های **uncensored** (abliterated) خانواده Qwen3.8-27B را به صورت رایگان روی GPU رایگان گوگل اجرا کنید و از طریق API سازگار با OpenAI یا Web UI به آن دسترسی داشته باشید.
+
+---
+
+## ویژگی‌های نسخه Pro (نسبت به نسخه اصلی)
+
+| قابلیت | نسخه اصلی | این نسخه (Pro) |
+|--------|-----------|----------------|
+| پشتیبانی از چند مدل | فقط یک مدل | چند مدل uncensored معتبر |
+| انتخاب Quant | ثابت | هوشمند + گزینه‌های بهتر برای T4 |
+| Keep-Alive | ساده | قوی‌تر + تلاش مجدد خودکار |
+| زبان مستندات | انگلیسی | فارسی + انگلیسی |
+| مدیریت خطا | پایه | بهتر و واضح‌تر |
+| پشتیبانی Vision | محدود | آماده برای mmproj |
+| تجربه کاربری | خوب | ساده‌تر و کاربردی‌تر |
+
+---
+
+## Attribution (اعتبار)
+
+این پروژه **الهام‌گرفته** از کار عالی [MorTsaedi/Free-Uncensored-Qwen3.8-27B](https://github.com/MorTsaedi/Free-Uncensored-Qwen3.8-27B) است.  
+ساختار اصلی، ایده استفاده از bore + llama.cpp روی Colab، و بسیاری از تصمیم‌های طراحی از آن پروژه گرفته شده.  
+نسخه فعلی شامل بهبودهای قابل توجه در پایداری، پشتیبانی چندمدلی، مستندات فارسی و تجربه کاربری است.
+
+---
+
+## نحوه استفاده (خیلی ساده)
+
+1. روی لینک زیر کلیک کنید تا نوت‌بوک در Colab باز شود:
+   - [باز کردن نوت‌بوک در Colab](https://colab.research.google.com/github/Beig-Rules/Free-Uncensored-Qwen38-Pro/blob/main/Free_Uncensored_Qwen38_Pro.ipynb)
+
+2. Runtime → Change runtime type → Hardware accelerator را روی **T4 GPU** بگذارید.
+
+3. سلول‌ها را به ترتیب اجرا کنید (دکمه ▶).
+
+4. بعد از اتمام سلول اصلی، دستورات SSH و لینک Web UI به شما داده می‌شود.
+
+---
+
+## مدل‌های پشتیبانی‌شده (Uncensored)
+
+- **OBLITERATUS/Qwen3.8-27B-OBLITERATED** (پیشنهادی پیش‌فرض)
+- سایر نسخه‌های abliterated معتبر (قابل انتخاب در سلول تنظیمات)
+
+Quant پیشنهادی برای T4 (15GB):
+- `Q3_K_M` (~13.5 GB) — ایمن و پایدار
+- `IQ4_XS` (~15.3 GB) — کیفیت بالاتر (در صورت امکان)
+
+---
+
+## محدودیت‌ها
+
+- سشن‌های رایگان Colab معمولاً حداکثر حدود ۱۲ ساعت دوام دارند.
+- سرعت تقریبی روی T4: ۷ تا ۱۲ توکن در ثانیه.
+- این ابزار برای تحقیق و استفاده شخصی طراحی شده. مسئولیت استفاده از مدل‌های uncensored کاملاً بر عهده کاربر است.
+
+---
+
+## لایسنس
+
+کد نوت‌بوک و مستندات این پروژه تحت مجوز آزاد منتشر می‌شود.  
+مدل‌های پایه تحت Apache 2.0 (از Qwen) هستند.  
+استفاده از مدل‌های uncensored نیازمند رعایت قوانین محلی و مسئولیت‌پذیری است.
+
+---
+
+**ساخته‌شده برای استفاده آسان‌تر و قوی‌تر از مدل‌های Uncensored Qwen3.8-27B**
