@@ -1,0 +1,21 @@
+{
+  "name": "@beig-rules/free-uncensored-qwen38-pro",
+  "version": "1.0.0",
+  "description": "Free Colab notebook package metadata for Free-Uncensored-Qwen38-Pro",
+  "license": "MIT",
+  "author": "Beig (Beig-Rules)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Beig-Rules/Free-Uncensored-Qwen38-Pro.git"
+  },
+  "homepage": "https://github.com/Beig-Rules/Free-Uncensored-Qwen38-Pro#readme",
+  "keywords": ["qwen", "colab", "llm", "uncensored", "beig-rules"],
+  "files": [
+    "README.md",
+    "Free_Uncensored_Qwen38_Pro.ipynb"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
+  }
+}
